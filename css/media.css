@@ -29,6 +29,8 @@
         width: 1158px;
     }
 
+/*          BENEFITS            */
+
     .benefits{
        padding: 120px 0;
     }
@@ -60,12 +62,17 @@
         border: 0;
         padding: 0;
         white-space: nowrap;
-        clip-path: inset(100%);
-        clip: rect(0 0 0 0);
+        clip-path: none;
+        clip: auto;
         overflow: hidden;
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
 
+    }
+
+    .benefits-item__title{
+        font-weight: 500;
+        font-size: 20px;
     }
 }
