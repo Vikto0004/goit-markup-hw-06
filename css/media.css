@@ -18,6 +18,20 @@
     .benefits-item__title{
         text-align: start;
     }
+
+/*          TEAM            */
+
+    .team-list{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 64px 24px;
+        justify-content: center;
+    }
+
+    .team-item{
+        width: calc((100% - 24px) / 2);
+        width: 264px;
+    }
 }
 
 @media screen and (min-width: 1158px){
@@ -74,5 +88,19 @@
     .benefits-item__title{
         font-weight: 500;
         font-size: 20px;
+    }
+
+/*          TEAM            */
+
+    .team{
+        padding: 120px 0;
+    }
+
+    .team-list{
+        gap: 24px;
+    }
+
+    .team-item{
+        width: calc((100% - 72px) / 4);
     }
 }
