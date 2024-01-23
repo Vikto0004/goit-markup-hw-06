@@ -65,7 +65,7 @@
         margin-top: 0;
         align-items: start;
     }
-    
+
     .footer-container-icon{
         margin: 0 auto auto 24px;
         align-items: start;
@@ -170,5 +170,47 @@
 
     .portfolio-container-img{
         width: 360px;
+    }
+
+/*          FOOTER          */
+  
+    .footer{
+        padding: 100px 0;
+    }
+
+    .footer-container{
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        flex-wrap: nowrap;
+    }
+
+    .footer-container-text{
+        margin-right: 120px;
+        margin: 0 120px 0 0;
+    }
+
+    .footer-container-icon{
+        margin: 0 0 auto 0;
+    }
+
+    .footer-descr{
+        max-width: 264px;
+    }
+
+    .footer-subscribe {
+        margin: 0 0 0 80px;
+    }
+
+    .footer-form{
+        gap: 24px;
+    }
+
+    .footer-input{
+        width: 264px;
+    }
+
+    .footer-form-button{
+        margin-left: 0;
     }
 }
