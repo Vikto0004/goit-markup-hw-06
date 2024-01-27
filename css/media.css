@@ -161,6 +161,13 @@
     .footer-form{
         flex-direction: row;
     }
+
+   /*----MODAL----*/
+    .modal{
+        width: 408px;
+        min-height: 584px;
+        padding: 72px 24px 24px 24px;
+    }
 }
 
 
@@ -171,6 +178,24 @@
 
     .container{
         width: 1158px;
+    }
+
+/*          HEADER          */
+
+    .header-nav__list{
+        margin-left: 76px;
+    }
+
+    .header-contacts__list{
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .header-contacts__link{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5; /* 150% */
+        letter-spacing: 0.32px;
     }
 
 /*          HERO                */
