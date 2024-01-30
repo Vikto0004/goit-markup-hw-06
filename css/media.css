@@ -65,23 +65,26 @@
 
 /*          HERO                */
 
-    .hero-container{
-        max-width: 766px;
-        margin: 0 auto;
-        padding: 112px 15px;
+    .hero{
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/tablet/tablet-bg.jpg);
+        width: 768px;
+        height: 436px;
     }
 
     @media screen and (min-device-pixel-ratio: 2),
   (min-resolution: 2dppx),
   (min-resolution: 192dpi) {
-    .hero-container {
+    .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/tablet/tablet-bg-2x.jpg)
   }
     
     .hero-title{
         font-size: 56px;
         max-width: 496px;
+    }
+
+    .hero-btn{
+        margin-top: 36px;
     }
 }
     
@@ -139,27 +142,17 @@
     .footer-container{
         display: flex;
         flex-wrap: wrap;
-    }
-
-    .footer-container-text{
-        width: 264px;
-        margin-left: 93px;
-        margin-top: 0;
-        align-items: start;
-    }
-
-    .footer-container-icon{
-        margin: 0 auto auto 24px;
-        align-items: start;
-    }
-
-    .footer-subscribe{
-        margin: 72px auto auto 93px;
-        align-items: start;
+        flex-direction: row;
+        gap: 72px 24px;
+        max-width: 530px;
     }
 
     .footer-form{
         flex-direction: row;
+    }
+
+    .footer-descr{
+        max-width: 264px;
     }
 
    /*----MODAL----*/
@@ -206,8 +199,8 @@
         background-repeat: no-repeat;  
         background-position: center;
         background-size: cover;
-        max-width: 1440px; 
         height: 600px;
+        width: 1440px;
         background-color: #2E2F42;
     }
 
@@ -218,11 +211,8 @@
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-2x.jpg);   
     }
 
-    .hero-container{
-        background-image: none;
-        height: 100%;
-        padding: 188px 15px;
-        width: 526px;
+    .hero-btn{
+        margin-top: 48px;
     }
 }
 /*          BENEFITS            */
@@ -296,27 +286,16 @@
     }
 
     .footer-container{
-        display: flex;
-        flex-direction: row;
-        align-items: stretch;
-        flex-wrap: nowrap;
+        max-width: 1158px;
+        gap: 0;
     }
 
-    .footer-container-text{
-        margin-right: 120px;
-        margin: 0 120px 0 0;
+    .footer-subscribe{
+        margin-left: 80px;
     }
 
     .footer-container-icon{
-        margin: 0 0 auto 0;
-    }
-
-    .footer-descr{
-        max-width: 264px;
-    }
-
-    .footer-subscribe {
-        margin: 0 0 0 80px;
+        margin-left: 120px;
     }
 
     .footer-form{
@@ -325,9 +304,5 @@
 
     .footer-input{
         width: 264px;
-    }
-
-    .footer-form-button{
-        margin-left: 0;
     }
 }

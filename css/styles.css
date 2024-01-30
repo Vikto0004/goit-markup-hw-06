@@ -55,7 +55,6 @@ img{
     width: 318px;
     margin: 0 auto;
     padding: 0 15px;
-    position: relative;
 }
 
 .visually-hidden {
@@ -120,6 +119,7 @@ img{
 .header-contacts__link{
     color: #434455;
     transition:  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-style: normal;
 }
 
 .header-contacts__link:hover,
@@ -211,6 +211,10 @@ img{
     text-transform: capitalize;
 }
 
+.carent{
+    color: #404BBF;
+}
+
 .mob-nav__link:hover,
 .mob-nav__link:focus{
     color: #404BBF;
@@ -222,12 +226,17 @@ img{
     gap: 24px;
 }
 
+.mob-contacts__list li:first-child a{
+    color: #404BBF;
+}
+
 .mob-contacts__link {
     color: #434455;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.4px;
+    font-style: normal;
 }
 
 .mob-contacts__link:hover,
@@ -272,25 +281,26 @@ img{
 .hero{
     background-color: transparent;
     margin: 0 auto;
-}
-
-.hero-container{
-    max-width: 320px;
+    width: 320px;
     height: 432px;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/mobil/mobil-bg.jpg);
     background-repeat: no-repeat;  
     background-position: center;
     background-size: cover;
-    padding: 72px 15px;
+}
+
+.hero-container{
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
 
 @media screen and (min-device-pixel-ratio: 2),
   (min-resolution: 2dppx),
   (min-resolution: 192dpi) {
-  .hero-container {
+  .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/mobil/mobil-bg-2x.jpg)
   }
 }
@@ -319,6 +329,7 @@ img{
     cursor: pointer;
     margin: auto auto 0 auto;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-top: 72px;
 }
 
 .hero-btn:hover,
@@ -526,7 +537,9 @@ img{
 }
 
 .footer-container{
-    align-items: baseline;
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
 }
 
 .footer-container-text{
@@ -558,12 +571,12 @@ img{
     color: #f4f4fd;
 }
 
-.footer-container-icon{
+/* .footer-container-icon{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 72px;
-}
+} */
 
 .footer-container-descr{
     font-weight: 500;
@@ -604,12 +617,12 @@ img{
     fill: #f4f4fd;
 }
 
-.footer-subscribe {
+/* .footer-subscribe {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 72px;
-}
+} */
 
 .footer-subscribe-text {
     color: var(--WHITE, #FFF);
